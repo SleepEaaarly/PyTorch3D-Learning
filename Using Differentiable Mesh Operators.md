@@ -11,11 +11,11 @@
 
 ### What is a Mesh?
 
-![What is Mesh](.\What is Mesh.png)
+![What is Mesh](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/What is Mesh.png)
 
 ### Mesh Operators
 
-![Mesh Operators](.\Mesh Operators.png)
+![Mesh Operators](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Mesh Operators.png)
 
 Mesh Operators are functions that take in as argument meshes: f(Mesh)
 
@@ -25,7 +25,7 @@ df/d(Mesh)
 
 ## Example: Chamfer Distance
 
-![Example Chamfer Distance](.\Example Chamfer Distance.png)
+![Example Chamfer Distance](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Example Chamfer Distance.png)
 
 #### Implementation of Chamfer Distance
 
@@ -35,13 +35,13 @@ Step 2: L2 distance between two sets of points
 
 #### Step 1: Online point sampling
 
-![Online point sampling](.\Online point sampling.png)
+![Online point sampling](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Online point sampling.png)
 
 注：(w1, w2, w3)被称为重心坐标(barycentric coordinates)，w1+w2+w3 = 1且非负
 
 ## Task 1 : Fitting a mesh to a target 3D shape
 
-![Task1](.\Task1.png)
+![Task1](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Task1.png)
 
 ### Load an obj file
 
