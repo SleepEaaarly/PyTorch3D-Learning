@@ -10,11 +10,11 @@
 
 ### Implicit surface function
 
-![Implicit surface](D:\CG\pytorch3d学习资料\pictures\Implicit surface.png)
+![Implicit surface](.\pictures\Implicit surface.png)
 
 ### Rendering an implicit surface
 
-![Rendering an implicit surface](D:\CG\pytorch3d学习资料\pictures\Rendering an implicit surface.png)
+![Rendering an implicit surface](.\pictures\Rendering an implicit surface.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -27,7 +27,7 @@ image = implicit_renderer(implicit_function=f, cameras=camera) # rendering
 
 ### Raysampling
 
-![Raysampling](D:\CG\pytorch3d学习资料\pictures\Raysampling.png)
+![Raysampling](.\pictures\Raysampling.png)
 
 ```python
 raysampler = pytorch3d.renderer.NDCGridRaysampler(
@@ -46,7 +46,7 @@ raysampler = pytorch3d.renderer.MonteCarloRaysampler(
 
 ### Raymarching
 
-![Raymarching](D:\CG\pytorch3d学习资料\pictures\Raymarching.png)
+![Raymarching](.\pictures\Raymarching.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -57,7 +57,7 @@ raymarcher = pytorch3d.renderer.EmissionAbsorbtionRaymarcher()
 
 #### overall structure
 
-![Nerf](D:\CG\pytorch3d学习资料\pictures\Nerf.png)
+![Nerf](.\pictures\Nerf.png)
 
 #### 1 Initialize the implicit renderer
 
@@ -172,7 +172,7 @@ for iteration in range(10000):
 
 ### Voxel grids
 
-![Voxel grids](D:\CG\pytorch3d学习资料\pictures\Voxel grids.png)
+![Voxel grids](.\pictures\Voxel grids.png)
 
 ### Voxel grids in PyTorch3D
 
@@ -188,7 +188,7 @@ volumes = Volumes(
 
 ### Volume rendering
 
-![Volume rendering](D:\CG\pytorch3d学习资料\pictures\Volume rendering.png)
+![Volume rendering](.\pictures\Volume rendering.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -201,7 +201,7 @@ iamge = volume_renderer(volumes=volumes, cameras=camera) # rendering
 
 ### Conversion of point clouds to volumes
 
-![Conversion of point clouds to volumes](D:\CG\pytorch3d学习资料\pictures\Conversion of point clouds to volumes.png)
+![Conversion of point clouds to volumes](.\pictures\Conversion of point clouds to volumes.png)
 
 ```python
 pointclouds = Pointclouds(...)

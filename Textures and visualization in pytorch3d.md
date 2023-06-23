@@ -10,7 +10,7 @@ plt.imshow(images[0,...,:3].cpu().numpy())
 # 只传入前三个通道rgb，不传入alpha
 ```
 
-![view the mesh](D:\CG\pytorch3d学习资料\pictures\view the mesh.png)
+![view the mesh](.\pictures\view the mesh.png)
 
 ### plotly view the mesh only topology interactively
 
@@ -18,11 +18,11 @@ plt.imshow(images[0,...,:3].cpu().numpy())
 plot_batch_individually(cow_mesh)
 ```
 
-![topology interactively](D:\CG\pytorch3d学习资料\pictures\topology interactively.png)
+![topology interactively](.\pictures\topology interactively.png)
 
 ## understand what we have
 
-![Understand what we have](D:\CG\pytorch3d学习资料\pictures\Understand what we have.png)
+![Understand what we have](.\pictures\Understand what we have.png)
 
 ## Image stored in texture
 
@@ -35,7 +35,7 @@ plt.imshow(texture_image.squeeze().cpu().numpy())
 plt.axis("off")
 ```
 
-![texture map](D:\CG\pytorch3d学习资料\pictures\texture map.png)
+![texture map](.\pictures\texture map.png)
 
 ### with vertices points on it
 
@@ -45,7 +45,7 @@ texturesuv_image_matplotlib(cow_mesh.textures, subsample=None)
 plt.axis("off")
 ```
 
-![texture map with points](D:\CG\pytorch3d学习资料\pictures\texture map with points.png)
+![texture map with points](.\pictures\texture map with points.png)
 
 ## Some mesh manipulations
 
@@ -76,7 +76,7 @@ colors = phong_shading(cow_mesh,fragments,lights,cameras,Materials(device=device
 
 ## TexturesVertex
 
-![TexturesVertex](D:\CG\pytorch3d学习资料\pictures\TexturesVertex.png)
+![TexturesVertex](.\pictures\TexturesVertex.png)
 
 ## Sampling a pointcloud from a mesh
 
@@ -86,4 +86,4 @@ pointcloud = Pointclouds(points=points, features=features)
 plot_batch_individually(pointcloud, pointcloud_max_points=19999)
 ```
 
-![pointcloud](D:\CG\pytorch3d学习资料\pictures\pointcloud.png)
+![pointcloud](.\pictures\pointcloud.png)

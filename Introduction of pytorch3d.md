@@ -16,23 +16,23 @@
 
 * 2D example: 图片分类总体流程
 
-![2dexample](D:\CG\pytorch3d学习资料\pictures\2dexample.png)
+![2dexample](.\pictures\2dexample.png)
 
 * 3D dl遇到的问题：
   * Batch分组tensor维度不固定
   * 图形学操作(如渲染)不支持梯度
 
-![2dvs3d](D:\CG\pytorch3d学习资料\pictures\2dvs3d.png)
+![2dvs3d](.\pictures\2dvs3d.png)
 
 ## Goals
 
 深度学习库特性(快速、模块化、可微) + 3D库特性(3D、不统一batching、结合3D操作)
 
-![goals](D:\CG\pytorch3d学习资料\pictures\goals.png)
+![goals](.\pictures\goals.png)
 
 ## Components
 
-![image-20230620111822144](C:\Users\Mars\AppData\Roaming\Typora\typora-user-images\image-20230620111822144.png)
+![image-20230620111822144](.\pictures\Components.png)
 
 * Data **structures**：batching logic以及使得操作损失函数和渲染过程高效支持不统一维度batching。
 
@@ -41,7 +41,7 @@
 
 #### Representation
 
-![meshes](D:\CG\pytorch3d学习资料\pictures\meshes.png)
+![meshes](.\pictures\meshes.png)
 
 三种表示形式：
 
@@ -123,7 +123,7 @@ T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
 
 #### K Nearest Neighbors
 
-![K Nearest Neighbor](D:\CG\pytorch3d学习资料\pictures\K Nearest Neighbor.png)
+![K Nearest Neighbor](.\pictures\K Nearest Neighbor.png)
 
 对给定点p，寻找点集Q中最近的K个点
 
@@ -139,7 +139,7 @@ T = Transform3d().scale(2, 1, 3).translate(1, 2, 3)
 
 #### Graph Conv
 
-![Graph Conv](D:\CG\pytorch3d学习资料\pictures\Graph Conv.png)
+![Graph Conv](.\pictures\Graph Conv.png)
 
 对每个Mesh的每个顶点，都有一个特征向量feature，图卷积操作是相邻点之间特征向量的求和平均过程。
 
@@ -161,7 +161,7 @@ y = conv(verts, edges)
 
 **Chamfer distance** 是集合S1中每个点对集合S2中点的KNN求和并反之亦然。
 
-![Chamfer Loss](D:\CG\pytorch3d学习资料\pictures\Chamfer Loss.png)
+![Chamfer Loss](.\pictures\Chamfer Loss.png)
 
 ```python
 from pytorch3d.utils import ico_sphere
@@ -203,7 +203,7 @@ loss_chamfer, _ = chamfer_distance(sample_sphere, sample_test)
 
 场景设置：mesh、texture map、lights、camera
 
-![rendering scene](D:\CG\pytorch3d学习资料\pictures\differentiable rendering.png)
+![rendering scene](.\pictures\differentiable rendering.png)
 
 * 正向传播：生成图片并计算loss
 * 反向传播：更新场景属性参数
@@ -212,7 +212,7 @@ loss_chamfer, _ = chamfer_distance(sample_sphere, sample_test)
 
 ##### Problem 1
 
-![rasterization process 1](D:\CG\pytorch3d学习资料\pictures\rasterization process 1.png)
+![rasterization process 1](.\pictures\rasterization process 1.png)
 
 问题：**Z discontinuity**当triangle mesh在z轴位移微元dz时，输出像素颜色会产生突变(先后顺序突变)。
 
@@ -220,7 +220,7 @@ loss_chamfer, _ = chamfer_distance(sample_sphere, sample_test)
 
 ##### Problem 2
 
-![rasterization process 2](D:\CG\pytorch3d学习资料\pictures\rasterization process 2.png)
+![rasterization process 2](.\pictures\rasterization process 2.png)
 
 问题：**XY discontinuity**当triangle mesh在xy平面位移微元dx(dy)时，输出像素颜色会产生突变(像素是否属于某三角形突变)。
 
@@ -234,7 +234,7 @@ loss_chamfer, _ = chamfer_distance(sample_sphere, sample_test)
 * Heterogeneous batching
 * Shading in PyTorch
 
-![Rendering engine](D:\CG\pytorch3d学习资料\pictures\Rendering engine.png)
+![Rendering engine](.\pictures\Rendering engine.png)
 
 ```python
 from pytorch3d.renderer import (
@@ -277,7 +277,7 @@ different blending modes
 * Texture Map + Vertex UV coordinates
 * Texture Atlas
 
-![Mesh texturing options](D:\CG\pytorch3d学习资料\pictures\Mesh texturing options.png)
+![Mesh texturing options](.\pictures\Mesh texturing options.png)
 
 
 

@@ -18,11 +18,11 @@
 
 ### Mesh R-CNN
 
-![Mesh R-CNN](D:\CG\pytorch3d学习资料\pictures\Mesh R-CNN.png)
+![Mesh R-CNN](.\pictures\Mesh R-CNN.png)
 
 **How to use only 2D supervision for 3D task?**
 
-![Idea Render and Compare](D:\CG\pytorch3d学习资料\pictures\Idea Render and Compare.png)
+![Idea Render and Compare](.\pictures\Idea Render and Compare.png)
 
 ### Differentiable Rendering
 
@@ -33,11 +33,11 @@
 
 ### Unsupervised Shape Prediction
 
-![Unsupervised Shape Prediction](D:\CG\pytorch3d学习资料\pictures\Unsupervised Shape Prediction.png)
+![Unsupervised Shape Prediction](.\pictures\Unsupervised Shape Prediction.png)
 
 ### Single Image View Synthesis
 
-![Single Image View Synthesis](D:\CG\pytorch3d学习资料\pictures\Single Image View Synthesis.png)
+![Single Image View Synthesis](.\pictures\Single Image View Synthesis.png)
 
 #### **Challenge**
 
@@ -53,4 +53,4 @@
 
 #### Approach
 
-![Single mesh View Synthesis Approach](D:\CG\pytorch3d学习资料\pictures\Single mesh View Synthesis Approach.png)
+![Single mesh View Synthesis Approach](.\pictures\Single mesh View Synthesis Approach.png)
