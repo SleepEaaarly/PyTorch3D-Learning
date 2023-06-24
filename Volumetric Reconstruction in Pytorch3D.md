@@ -10,11 +10,11 @@
 
 ### Implicit surface function
 
-![Implicit surface](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesImplicit_surface.png)
+![Implicit surface](.\pictures\Implicit_surface.png)
 
 ### Rendering an implicit surface
 
-![Rendering an implicit surface](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesRendering_an implicit_surface.png)
+![Rendering an implicit surface](.\pictures\Rendering_an implicit_surface.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -27,7 +27,7 @@ image = implicit_renderer(implicit_function=f, cameras=camera) # rendering
 
 ### Raysampling
 
-![Raysampling](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesRaysampling.png)
+![Raysampling](.\pictures\Raysampling.png)
 
 ```python
 raysampler = pytorch3d.renderer.NDCGridRaysampler(
@@ -46,7 +46,7 @@ raysampler = pytorch3d.renderer.MonteCarloRaysampler(
 
 ### Raymarching
 
-![Raymarching](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesRaymarching.png)
+![Raymarching](.\pictures\Raymarching.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -57,7 +57,7 @@ raymarcher = pytorch3d.renderer.EmissionAbsorbtionRaymarcher()
 
 #### overall structure
 
-![Nerf](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesNerf.png)
+![Nerf](.\pictures\Nerf.png)
 
 #### 1 Initialize the implicit renderer
 
@@ -172,7 +172,7 @@ for iteration in range(10000):
 
 ### Voxel grids
 
-![Voxel grids](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesVoxel_grids.png)
+![Voxel grids](.\pictures\Voxel_grids.png)
 
 ### Voxel grids in PyTorch3D
 
@@ -188,7 +188,7 @@ volumes = Volumes(
 
 ### Volume rendering
 
-![Volume rendering](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesVolume_rendering.png)
+![Volume rendering](.\pictures\Volume_rendering.png)
 
 ```python
 ### PyTorch3D implementation:
@@ -201,7 +201,7 @@ iamge = volume_renderer(volumes=volumes, cameras=camera) # rendering
 
 ### Conversion of point clouds to volumes
 
-![Conversion of point clouds to volumes](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesConversion_of point_clouds_to_volumes.png)
+![Conversion of point clouds to volumes](.\pictures\Conversion_of point_clouds_to_volumes.png)
 
 ```python
 pointclouds = Pointclouds(...)

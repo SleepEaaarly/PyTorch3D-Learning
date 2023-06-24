@@ -18,11 +18,11 @@
 
 ### Mesh R-CNN
 
-![Mesh R-CNN](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesMesh_R-CNN.png)
+![Mesh R-CNN](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Mesh_R-CNN.png)
 
 **How to use only 2D supervision for 3D task?**
 
-![Idea Render and Compare](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesIdea_Render_and_Compare.png)
+![Idea Render and Compare](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Idea_Render_and_Compare.png)
 
 ### Differentiable Rendering
 
@@ -33,11 +33,11 @@
 
 ### Unsupervised Shape Prediction
 
-![Unsupervised Shape Prediction](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesUnsupervised_Shape_Prediction.png)
+![Unsupervised Shape Prediction](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Unsupervised_Shape_Prediction.png)
 
 ### Single Image View Synthesis
 
-![Single Image View Synthesis](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesSingle_Image_View_Synthesis.png)
+![Single Image View Synthesis](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Single_Image_View_Synthesis.png)
 
 #### **Challenge**
 
@@ -53,4 +53,4 @@
 
 #### Approach
 
-![Single mesh View Synthesis Approach](https://github.com/SleepEaaarly/PyTorch3D-Learning/tree/main/picturesSingle_mesh_View_Synthesis_Approach.png)
+![Single mesh View Synthesis Approach](https://github.com/SleepEaaarly/PyTorch3D-Learning/blob/main/pictures/Single_mesh_View_Synthesis_Approach.png)
